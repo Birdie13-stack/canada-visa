@@ -10,6 +10,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.header{
+  position: relative;
+  z-index: 9999;
+}
+
 header {
   position: fixed;
   background-color: #FFFFFF;
@@ -28,19 +33,19 @@ header {
   margin-bottom: 20px;
 }
 
-header ul {
+.nav {
   float: right;
   margin-top: 20px;
   margin-right: 90px;
 }
 
-ul li {
+.nav li {
   display: inline-block;
   margin-right: 30px;
   padding: 10px;
 }
 
-li a {
+.nav li a {
   color: #da0b0b;
   text-decoration: none;
   font-size: 0.9rem;
@@ -123,7 +128,6 @@ h1 {
 
 .slideshow div h2 {
   color: black;
-  /* margin-top: 10px; */
   margin-bottom: 5px;
   font-size: 1.3rem;
 }
@@ -141,7 +145,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     width: 85%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 120px;
     font-weight: bold;
   }
 
@@ -151,7 +156,7 @@ h1 {
      padding: 10px;
     margin-right: 40px;
     width: 30%;
-    height: 300px;
+    min-height: 300px;
     border-radius: 2px;
     box-shadow: 0 0 7px rgba(0,0,0, 0.5);
     position: relative;
@@ -210,8 +215,8 @@ h1 {
 .permanent {
   margin: 70px auto;
   background-color: rgba(1, 96, 121, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 85%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 80%;
   height: auto;
   padding: 10px;
   border-radius: 20px;
@@ -248,10 +253,6 @@ h1 {
   justify-content: center;
 }
 
-.button-container button{
-  margin-left: 50px;
-}
-
 .permanent h3 {
   margin: 10px;
 }
@@ -270,7 +271,7 @@ h1 {
 .line2:after {
   content: "";
   position: absolute;
-  /* top: -8px; */
+  top: -8px;
   width: 20px;
   height: 0;
   border-style: solid;
@@ -297,15 +298,23 @@ h1 {
 
 .programs {
   color: #897c7c;
-  list-style-type: disc;
   font-size: 1.2rem;
-  margin: auto;
+  margin: 10px auto;
   width: 90%;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: baseline;
+  align-items: left;
+  list-style-type: square;
+  list-style-image: url("./images/check.jpg");
 }
 
 .programs li {
-  /* margin-right: 20px; */
+  /* margin: 10px; */
+  font-weight: bold;
 }
 
 /* Styles for the form */
@@ -377,6 +386,7 @@ input, select{
      border: 2px solid #897c7c;
      border-radius: 7px;
      height: 3px;
+     opacity: 1;
 }
 
 textarea{
@@ -526,3 +536,9 @@ footer div{
   padding: 20px;
   font-size: 1.5rem;
 }
+
+/* @media max-width(768px){
+  .nav{
+    display: none;
+}
+} */
