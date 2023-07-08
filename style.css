@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-bottom: 1px solid #016079;
+  border-left: 1px solid #016079;
+  border-right: 1px solid #016079;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header ul {
+  float: right;
+  margin-top: 20px;
+  margin-right: 90px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 10px;
+}
+
+li a {
+  color: #da0b0b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  height: 75vh;
+  background: linear-gradient(90deg, #02607a, #02607ab7) left top / 100% 100%
+      no-repeat,
+    url(./images/passport.jpg) center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  color: #fbfaf5;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-left: 30px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  color: #81d8f5;
+  font-size: 2rem;
+  margin-left: 30px;
+}
+
+.desc {
+  font-size: 20px;
+  margin-left: 120px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 80%;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+}
+
+/* Styling for the scroll images section */
+
+.slideshow {
+  display: flex;
+  overflow-x: auto;
+  background-color: #016079;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slideshow::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow div {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.slideshow div:last-child {
+  margin-right: 0;
+}
+
+.slideshow div img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: cover;
+}
+
+.slideshow div h2 {
+  color: black;
+  /* margin-top: 10px; */
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+/* Styling for the services section */
+
+.services h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+  color: #da0b0b;
+}
+
+  .services-content{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  
+  .service{
+    background-color: #feefef;
+     padding: 10px;
+    margin-right: 40px;
+    width: 30%;
+    height: 300px;
+    border-radius: 2px;
+    box-shadow: 0 0 7px rgba(0,0,0, 0.5);
+    position: relative;
+  }
+
+  .service p{
+    padding: 10px 2px;
+  }
+
+.service i{
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.services a{
+  padding: 8px;
+  background-color: #da0b0b;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+   }
+
+.line {
+  position: relative;
+  width: 70%;
+  height: 3px;
+  background-color: #016079;
+  margin: 40px auto;
+}
+
+.line:before,
+.line:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #016079;
+  border-radius: 50%;
+}
+
+.line:before {
+  left: -1px;
+  top: -8px;
+}
+
+.line:after {
+  right: -1px;
+  top: -8px;
+}
+
+.permanent {
+  margin: 70px auto;
+  background-color: rgba(1, 96, 121, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 85%;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.permanent p {
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 1.3rem;
+  color: #897c7c;
+}
+
+.permanent h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.permanent a {
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #da0b0b;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button{
+  margin-left: 50px;
+}
+
+.permanent h3 {
+  margin: 10px;
+}
+
+/* Styles for the line separators */
+
+.line2 {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: 4px;
+  background-color: #016079;
+}
+
+.line2:before,
+.line2:after {
+  content: "";
+  position: absolute;
+  /* top: -8px; */
+  width: 20px;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px;
+}
+
+.line2:before {
+  left: -6px;
+  top: -8px;
+  border-color: transparent transparent transparent #016079;
+}
+
+.line2:after {
+  right: -6px;
+  top: -8px;
+  border-color: transparent #016079 transparent transparent;
+}
+
+#foreign {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.programs {
+  color: #897c7c;
+  list-style-type: disc;
+  font-size: 1.2rem;
+  margin: auto;
+  width: 90%;
+  text-align: left;
+}
+
+.programs li {
+  /* margin-right: 20px; */
+}
+
+/* Styles for the form */
+
+.form{
+     /* max-width: 1000px; */
+     width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 15px;
+     font-weight: bold;
+
+
+}
+
+.form h3{
+     text-align: center;
+     color: #da0b0b;
+     font-size: 1.6rem;
+     margin-top: 30px;
+     margin-bottom: 50px;
+}
+
+.form .input-group{
+     width: 100%;
+     margin-bottom: 20px;
+
+}
+
+.select-container{
+     display: flex;
+     position: relative;
+}
+
+select{
+     appearance: none;
+      color: #897c7c;
+     cursor: pointer;
+     width: 100%;
+    
+}
+
+.icon-container{
+     width: 50px;
+     height: 100%;
+     position: absolute;
+     right: 10px;
+     display: flex;
+     align-items: right;
+     justify-content: right;
+     pointer-events: none;
+    
+}
+
+.icon-container i{
+     color: #fff;
+     font-size: 1.2rem;
+     pointer-events: none;
+     cursor: pointer;
+}
+
+input, select{
+  width: 100%;
+     padding: 10px;
+     font-size: 16px;
+     border: 2px solid #897c7c;
+     border-radius: 7px;
+     height: 3px;
+}
+
+textarea{
+  padding: 10px;
+  border: 2px solid #897c7c;
+  border-radius: 7px;
+  resize: none;
+  width: 100%;
+}
+
+input[type="file"]{
+  height: 100px;
+  width: 200px;
+  border: 2ps solid black;
+  display: none;
+}
+
+#file{
+  width: 200px;
+  border: 2px solid #897c7c;
+  background-color: white;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline: none;
+  border: 2px solid #da0b0b;
+}
+
+label{
+     font-weight: bold;
+}
+
+form button{
+     width: 150px;
+     padding: 10px;
+     font-size: 16px;
+     border: 2px solid #da0b0b;
+     border-radius: 15px;
+     background-color: #da0b0b;
+     color: #fff;
+     cursor: pointer;
+
+}
+
+.row{
+     display: flex;
+     
+     align-items: center;
+     justify-content: space-between;
+}
+
+.row .input-group{
+     width: 45%;
+}
+
+
+#other{
+  height: 20px;
+}
+
+#compulsory{
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.required {
+  color: red;
+}
+
+#start{
+  /* padding: 5px; */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #da0b0b;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+
+}
+
+#confirm{
+  /* color: #016079;
+  padding-left: 150px;
+  margin-top: 5px;
+  font-size: 1rem; */
+  width: 600px;
+  font-size: 1rem;
+  margin: 10px auto 70px auto;
+  color: #016079;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+/* Styling for the Footer */
+
+footer{
+  background-color: #E34A4A;
+  padding-left: 50px;
+  color: white;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer div{
+  width: 1200px;
+  margin: 0 auto 20px auto;
+}
+
+#main{
+  margin-bottom: 20px;
+}
+
+
+
+#about{
+  padding-bottom: 20px;
+
+}
+
+/* For the form Redirect Page */
+
+.received{
+  background-color: #035C74;
+  width: 80%;
+  height: 200px;
+ position: relative;
+ top: 100px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px;
+ color: white;
+}
+
+.credits{
+  background-color: #E34A4A;
+  text-align: center;
+  position: absolute;
+   bottom: 0;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5rem;
+}
