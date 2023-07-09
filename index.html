@@ -249,6 +249,7 @@
       <section class="form">
         <form action="redirect.html" id="form">
           <h3>START APPLICATION HERE</h3>
+          <div class="wrapper">
 
           <div class="row">
             <div class="input-group">
@@ -280,7 +281,7 @@
           </div>
 
           <div class="row">
-            <div class="input-group selector">
+            <div class="input-group">
               <label for="gender">Gender <span class="required">*</span></label>
               <div class="select-container">
               <select id="gender" name="gender">
@@ -442,7 +443,9 @@
 
             <div class="input-group">
               <label for="other">If other, Name them</label>
-              <input type="text" name="Other" id="other" />
+              <!-- <input type="text" name="Other" id="other" /> -->
+              <textarea name="other" id="other" rows="2"></textarea>
+
             </div>
 
             <div class="row">
@@ -526,7 +529,7 @@
                   <!-- <label for="front-view">Upload Document(Front View)</label> -->
                   
                   <input type="file" name="front-view" id="front-view"> 
-                  <button id="upload"><i class="fa-solid fa-file-arrow-up" style="color: #cccccc;" id="front-view"></i></button>
+                  <!-- <button id="upload" name="Upload Front View"><i class="fa-solid fa-file-arrow-up" style="color: #cccccc;" id="front-view"></i></button> -->
                 </div>
 
                 <div class="input-group">
@@ -536,6 +539,8 @@
                 
               </div>
 
+              </div>
+
             
 
             <p id="compulsory">
@@ -543,9 +548,8 @@
               filled.
             </p>
             <div class="button-container">
-              <button class="apply">Submit</button>
+              <button class="apply" name="apply">Submit</button>
             </div>
-          </div>
         </form>
       </section>
 
@@ -563,7 +567,7 @@
 
       <section id="about">
       
-        <p id="main"> About us </p>
+        <h4 id="main"> About us </h4>
         <p>
         Green Admiral Immigration Solutions is a Canadian company that
         has been serving the Atlantic Provinces since 2019. The company
@@ -595,7 +599,7 @@
 
     </section>
 
-      <section id="contact">
+      <div id="contact">
         <p>Contact Info</p>
           <p>
             Address : 185 Topsail Road, Suite 109, Mount Pearl, NL A1N 3J2
@@ -603,7 +607,8 @@
           <p>
           <p>Phone : 1-709-289-3600</p>
           <p>Email : greenadmiralsolution@gmail.com</p>
-          </section>
+
+          </div>
 
           </div>
 

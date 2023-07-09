@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -380,7 +381,7 @@ select{
 }
 
 input, select{
-  width: 100%;
+     width: 100%;
      padding: 10px;
      font-size: 16px;
      border: 2px solid #897c7c;
@@ -439,7 +440,7 @@ form button{
 }
 
 .row .input-group{
-     width: 45%;
+     width: 48%;
 }
 
 
