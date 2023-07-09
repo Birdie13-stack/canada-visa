@@ -64,6 +64,7 @@ header {
   justify-content: center;
   padding-left: 100px;
   color: #fbfaf5;
+  width: 100%;
 }
 
 h1 {
@@ -326,6 +327,7 @@ h1 {
      margin-left: auto;
      margin-right: auto;
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      font-size: 15px;
@@ -400,9 +402,9 @@ textarea{
 
 input[type="file"]{
   height: 100px;
-  width: 200px;
+  width: 300px;
   border: 2ps solid black;
-  display: none;
+  /* display: none;  */
 }
 
 #file{
@@ -437,25 +439,25 @@ form button{
      
      align-items: center;
      justify-content: space-between;
+     
+
 }
 
 .row .input-group{
      width: 48%;
 }
 
-
+/* 
 #other{
   height: 20px;
-}
+} */
 
 #compulsory{
   font-size: 0.9rem;
-  color: #000;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 100px;
 }
 
 .required {
@@ -463,28 +465,21 @@ form button{
 }
 
 #start{
-  /* padding: 5px; */
   font-size: 1rem;
   font-weight: bold;
   color: #da0b0b;
   text-align: center;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 40px;
   
 
 }
 
 #confirm{
-  /* color: #016079;
-  padding-left: 150px;
-  margin-top: 5px;
-  font-size: 1rem; */
   width: 600px;
   font-size: 1rem;
   margin: 10px auto 70px auto;
   color: #016079;
   font-weight: bold;
-  padding-left: 100px;
 }
 
 /* Styling for the Footer */
@@ -538,8 +533,57 @@ footer div{
   font-size: 1.5rem;
 }
 
-/* @media max-width(768px){
-  .nav{
-    display: none;
+
+@media (max-width: 768px){
+  body{
+    overflow-x: hidden !important;
+  }
+
+  .line, .line2{
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  .form{
+    min-width: 280px;
+    
 }
-} */
+
+.input-group{
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.input-group:nth-child(2n){
+  justify-content: space-between;
+}
+
+.services-content{
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.service{
+  margin-bottom: 20px;
+  height: auto;
+  padding: 20px;
+  width: 90%;
+  background-color: #FEEFEF;
+}
+
+#blue{
+  padding: 8px;
+  background-color: #016079;
+  border: none;
+
+}
+
+.title{
+ /* position: absolute; */
+}
+
+footer{
+ height: auto;
+}
+
+}
