@@ -85,7 +85,7 @@ h1 {
   margin-left: 120px;
   margin-top: 80px;
   margin-bottom: 40px;
-  width: 80%;
+  width: 85%;
   font-family: "Noto Serif", serif;
   font-weight: 700;
 }
@@ -401,18 +401,20 @@ textarea{
   width: 100%;
 }
 
-input[type="file"]{
-  height: 75px;
-  width: 100%;
-  border: 2ps solid black;
-  /* display: none;  */
-  appearance: none;
+#view{
+  padding: 10px;
+  width: 330px;
+  margin-top: 10px;
+  border: 2px solid #897c7c;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+
 }
 
-#file{
-  width: 200px;
-  border: 2px solid #897c7c;
-  background-color: white;
+input[type="file"]{
+  display: none; 
+  
 }
 
 input:focus, select:focus, textarea:focus{
@@ -438,11 +440,8 @@ form button{
 
 .row{
      display: flex;
-     
      align-items: center;
      justify-content: space-between;
-     
-
 }
 
 .row .input-group{
@@ -467,8 +466,6 @@ form button{
   color: #da0b0b;
   text-align: center;
   margin-top: 40px;
-  
-
 }
 
 #confirm{
@@ -485,7 +482,7 @@ footer{
   background-color: #E34A4A;
   padding-left: 50px;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0 auto;
   padding: 20px;
 }
