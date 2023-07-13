@@ -552,11 +552,15 @@ footer {
 
 /* //MobileVersion */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   body {
     overflow-x: hidden !important;
     overflow-y: none;
     font-size: 20px;
+  }
+
+  header{
+    max-width: 100%;
   }
 
   .nav{
@@ -588,6 +592,10 @@ footer {
     padding: 0;
   }
 
+  .title img{
+    max-width: 100%;
+  }
+
   .clear {
     clear: both;
   }
@@ -607,6 +615,7 @@ footer {
   .form {
     /* min-width: 280px; */
     margin-left: 20px;
+    max-width: 100%;
 
   }
 
@@ -626,18 +635,22 @@ footer {
 
   .service {
     margin-bottom: 40px;
-    height: 350px;
-    padding: 20px;
+    height: auto;
+    padding: 30px;
     width: 90%;
     background-color: #feefef;
   }
 
   .permanent{
-    margin: 30px 40px;
+    margin: 30px auto;
   }
 
   form{
     width: 80%;
+  }
+
+  .service .text{
+    margin-bottom:  20px;
   }
 
    .row {
