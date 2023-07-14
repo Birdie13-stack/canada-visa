@@ -113,9 +113,10 @@ h1 {
 
 .desc {
   font-size: 20px;
-  margin-left: 120px;
+  /* margin-left: 120px;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
+  margin: 80px auto 40px auto;
   width: 85%;
   font-family: "Noto Serif", serif;
   font-weight: 700;
@@ -552,7 +553,7 @@ footer {
 
 /* //MobileVersion */
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   body {
     overflow-x: hidden !important;
     overflow-y: none;
@@ -590,10 +591,15 @@ footer {
 
   .title{
     padding: 0;
+    max-width: 100%;
   }
 
-  .title img{
+  /* .title img{
     max-width: 100%;
+  } */
+
+  body::-webkit-scrollbar{
+    width: 0;
   }
 
   .clear {
@@ -613,8 +619,7 @@ footer {
   }
 
   .form {
-    /* min-width: 280px; */
-    margin-left: 20px;
+    max-width: 280px;
     max-width: 100%;
 
   }
@@ -682,122 +687,4 @@ footer {
   }
 }
 
-@media (min-width: 480px) and (max-width: 600px){
-  header{
-    max-width: 100%;
-  }
-
-  .nav{
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 40%;
-          height: 50px;
-          color: orange;
-          top: 50px;
-          position: fixed;
-          right: -100%;
-          z-index: 100;
-          background-color: black;
-
-  }
-
-  .logo {
-    margin-left: 20px;
-    width: 20%;
-  }
-
-  .title{
-    padding: 0;
-  }
-
-  .title img{
-    max-width: 100%;
-  }
-
-  .clear {
-    clear: both;
-  }
-
-  .desc {
-    margin: 40px auto;
-  }
-  .line {
-    width: 70%;
-    margin: 20px 70px;
-  }
-
-  .line2 {
-    width: 90%;
-  }
-
-  .form {
-    /* min-width: 280px; */
-    max-width: 100%;
-
-  }
-
-
-  #back-view{
-    width: 1200px;
-  }
-  .title {
-    height: 100vh;
-    width: 100%;
-  }
-
-  .services-content {
-    flex-direction: column;
-    margin: 20px auto;
-  }
-
-  .service {
-    margin-bottom: 40px;
-    height: auto;
-    padding: 30px;
-    width: 90%;
-    background-color: #feefef;
-  }
-
-  .permanent{
-    margin: 30px auto;
-  }
-
-  form{
-    width: 80%;
-  }
-
-  .service .text{
-    margin-bottom:  20px;
-  }
-
-   .row {
-    flex-direction: column;
-  }
-
-  .row .input-group {
-    width: 100%;
-  }
-
-  #blue {
-    padding: 8px;
-    background-color: #016079;
-    border: none;
-  }
-
-  #confirm{
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  footer {
-    height: auto;
-    width: 100%;
-  }
-
-  .foot-text {
-    width: 95%;
-  }
-
-}
+@media(min-widtj)
