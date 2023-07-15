@@ -483,7 +483,7 @@ form button {
 }
 
 #confirm {
-  width: 600px;
+  width: 700px;
   font-size: 1rem;
   margin: 10px auto 70px auto;
   color: #016079;
@@ -541,6 +541,7 @@ footer {
 
 /* //MobileVersion */
 
+
 @media (max-width: 1024px) {
   body {
     overflow-x: hidden !important;
@@ -594,15 +595,10 @@ footer {
   }
 
   .form {
-    max-width: 280px;
     max-width: 100%;
 
   }
 
-
-  #back-view{
-    width: 1200px;
-  }
   .title {
     height: 100vh;
     width: 100%;
@@ -663,6 +659,15 @@ footer {
 }
 
 @media(max-width: 768px){
+
+  .received{
+    width: 100%;
+    top: 70px;
+  }
+
+  .recieved p{
+    top: 200px;
+  }
 
   .open-menu{
     display: block;
